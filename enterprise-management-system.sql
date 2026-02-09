@@ -4,13 +4,14 @@ CREATE TABLE states (
 );
 
 CREATE TABLE cities (
-    city_id INTEGER PRIMARY KEY,
+    city_id INT PRIMARY KEY,
     city_name VARCHAR(50) NOT NULL,
-    state_id VARCHAR(2)
+    state_id VARCHAR(2),
+    CONSTRAINT fk_city_state FOREIGN KEY (state_id) REFERENCES states(state_id)
 );
 
 CREATE TABLE equipment (
-    equipment_id INTEGER PRIMARY KEY,
+    equipment_id INT PRIMARY KEY,
     equipment_name VARCHAR(50) NOT NULL,
     purchase_date DATE NOT NULL,
     purchase_value DECIMAL(10,2) NOT NULL,
@@ -19,16 +20,48 @@ CREATE TABLE equipment (
 );
 
 CREATE TABLE department (
-    department_id INTEGER PRIMARY KEY,
+    department_id INT PRIMARY KEY,
     department_name VARCHAR(100) NOT NULL,
-    dapartment_budget DECIMAL(10,2)
+    department_budget DECIMAL(10,2)
 );
 
 CREATE TABLE projects (
-    project_id INTEGER PRIMARY KEY,
+    project_id INT PRIMARY KEY,
     project_description VARCHAR(200) NOT NULL,
-    starts_date DATE NOT NULL,
-    ends_date DATE NOT NULL,
+    date_start DATE NOT NULL,
+    date_end DATE NOT NULL,
     overall_costs DECIMAL(10,2) NOT NULL,
-    department_id INTEGER
+    department_id INT,
+    CONSTRAINT fk_projects_department FOREIGN KEY (department_id) REFERENCES department(department_id)
+);
+
+CREATE TABLE employees (
+    employee_id INT PRIMARY KEY,
+    employee_name VARCHAR(100) NOT NULL,
+    phone_number VARCHAR(20) NOT NULL UNIQUE,
+    national_id VARCHAR(30) NOT NULL UNIQUE,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    hire_date DATE NOT NULL,
+    street VARCHAR(100) NOT NULL,
+    district VARCHAR(50) NOT NULL,
+    street_number VARCHAR(10) NOT NULL,
+    complement VARCHAR(50),
+    postal_code VARCHAR(20) NOT NULL,
+    city_id INT,
+    department_id INT,
+    CONSTRAINT fk_employees_cities FOREIGN KEY (city_id) REFERENCES cities(city_id),
+    CONSTRAINT fk_employees_department FOREIGN KEY (department_id) REFERENCES department(department_id)
+);
+
+CREATE TABLE employee_project (
+    employee_id INT,
+    project_id INT,
+    equipment_id INT,
+    assignment_start DATE NOT NULL,
+    assignment_end DATE NOT NULL,
+    cost DECIMAL(10,2),
+    PRIMARY KEY (employee_id, project_id),
+    CONSTRAINT fk_eproject_employees FOREIGN KEY (employee_id) REFERENCES employees(employee_id),
+    CONSTRAINT fk_eproject_projects FOREIGN KEY (project_id) REFERENCES projects(project_id),
+    CONSTRAINT fk_eproject_equipment FOREIGN KEY (equipment_id) REFERENCES equipment(equipment_id)
 );
