@@ -12,7 +12,7 @@ CREATE TABLE states (
 );
 
 CREATE TABLE cities (
-    city_id INT PRIMARY KEY,
+    city_id INT IDENTITY(1,1) PRIMARY KEY,
     city_name VARCHAR(50) NOT NULL,
     state_id VARCHAR(3) NOT NULL,
     country_id CHAR(2) NOT NULL,
@@ -20,18 +20,18 @@ CREATE TABLE cities (
 );
 
 CREATE TABLE equipment (
-    equipment_id INT PRIMARY KEY,
+    equipment_id INT IDENTITY(1,1) PRIMARY KEY,
     equipment_name VARCHAR(50) NOT NULL,
     purchase_date DATE NOT NULL,
-    purchase_value DECIMAL(10,2) NOT NULL,
+    purchase_value DECIMAL(10,2) NOT NULL CHECK (purchase_value >= 0),
     equipment_status VARCHAR(250) NOT NULL,
     security_requirements VARCHAR(250) NOT NULL
 );
 
 CREATE TABLE department (
-    department_id INT PRIMARY KEY,
+    department_id INT IDENTITY(1,1) PRIMARY KEY,
     department_name VARCHAR(100) NOT NULL,
-    department_budget DECIMAL(10,2)
+    department_budget DECIMAL(10,2) NOT NULL CHECK (department_budget >= 0)
 );
 
 CREATE TABLE projects (
@@ -39,7 +39,7 @@ CREATE TABLE projects (
     project_description VARCHAR(200) NOT NULL,
     date_start DATE NOT NULL,
     date_end DATE NOT NULL,
-    overall_costs DECIMAL(10,2) NOT NULL,
+    overall_costs DECIMAL(10,2) NOT NULL CHECK (overall_costs >= 0),
     department_id INT NOT NULL,
     CONSTRAINT fk_projects_department FOREIGN KEY (department_id) REFERENCES department(department_id),
     CONSTRAINT chk_project_dates CHECK (date_end >= date_start)
@@ -69,7 +69,7 @@ CREATE TABLE employee_project (
     equipment_id INT,
     assignment_start DATE NOT NULL,
     assignment_end DATE NOT NULL,
-    cost DECIMAL(10,2),
+    cost DECIMAL(10,2) NOT NULL CHECK (cost >= 0),
     PRIMARY KEY (employee_id, project_id),
     CONSTRAINT fk_eproject_employees FOREIGN KEY (employee_id) REFERENCES employees(employee_id),
     CONSTRAINT fk_eproject_projects FOREIGN KEY (project_id) REFERENCES projects(project_id),
