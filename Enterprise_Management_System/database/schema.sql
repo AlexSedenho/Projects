@@ -1,3 +1,8 @@
+CREATE DATABASE UrbanSuit_Manager;
+GO
+USE UrbanSuit_Manager;
+GO
+
 CREATE TABLE countries (
     country_id CHAR(2) PRIMARY KEY,
     country_name VARCHAR(100) NOT NULL
