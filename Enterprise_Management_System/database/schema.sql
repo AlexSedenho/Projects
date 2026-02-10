@@ -6,14 +6,14 @@ GO
 -- AMBIENTE DE DESENVOLVIMENTO / DEVELOPMENT ENVIRONMENT
 -- Limpa as tabelas existentes para evitar conflitos durante os testes de schema.
 -- Drops existing tables to avoid conflicts during schema testing.
-DROP TABLE employee_project;
-DROP TABLE employees;
-DROP TABLE projects;
-DROP TABLE department;
-DROP TABLE equipment;
-DROP TABLE cities;
-DROP TABLE states;
-DROP TABLE countries;
+DROP TABLE IF EXISTS employee_project;
+DROP TABLE IF EXISTS employees;
+DROP TABLE IF EXISTS projects;
+DROP TABLE IF EXISTS department;
+DROP TABLE IF EXISTS equipment;
+DROP TABLE IF EXISTS cities;
+DROP TABLE IF EXISTS states;
+DROP TABLE IF EXISTS countries;
 
 CREATE TABLE countries (
     country_id CHAR(2) PRIMARY KEY,
