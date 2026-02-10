@@ -3,6 +3,18 @@ GO
 USE UrbanSuit_Manager;
 GO
 
+-- AMBIENTE DE DESENVOLVIMENTO / DEVELOPMENT ENVIRONMENT
+-- Limpa as tabelas existentes para evitar conflitos durante os testes de schema.
+-- Drops existing tables to avoid conflicts during schema testing.
+DROP TABLE employee_project;
+DROP TABLE employees;
+DROP TABLE projects;
+DROP TABLE department;
+DROP TABLE equipment;
+DROP TABLE cities;
+DROP TABLE states;
+DROP TABLE countries;
+
 CREATE TABLE countries (
     country_id CHAR(2) PRIMARY KEY,
     country_name VARCHAR(100) NOT NULL
