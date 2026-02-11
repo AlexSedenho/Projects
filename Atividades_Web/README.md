@@ -2,7 +2,9 @@
 
 Este diretório é dedicado para organizar as atividades da aula de Desenvolvimento Web em um só lugar.
 
-### Tecnologias & Linguagens
+---
+
+## Tecnologias & Linguagens
 <div>
     <code><img src="https://skillicons.dev/icons?i=vscode" /></code>
     <code><img src="https://skillicons.dev/icons?i=markdown" /></code>
