@@ -1,11 +1,15 @@
 # Projetos Acadêmicos - IFSP Barretos e Alura
 
-Este repositório contém scripts e projetos desenvolvidos durante o curso de **Análise e Desenvolvimento de Sistemas** no **IFSP Câmpus Barretos** e a carreira **Desenvolvimento Backend Java** na **Alura**.
+Este repositório contém scripts e projetos e atividades desenvolvidas durante o curso de **Análise e Desenvolvimento de Sistemas** no **IFSP Câmpus Barretos** e a carreira **Desenvolvimento Backend Java** na **Alura**.
 
 ---
 
 ### Tecnologias & Linguagens
-
+<div>
+  <code><img src="https://skillicons.dev/icons?i=vscode" /></code>
+  <code><img src="https://skillicons.dev/icons?i=markdown" /></code>
+  <code><img src="https://skillicons.dev/icons?i=java" /></code>
+</div>
 
 ---
 
