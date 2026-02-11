@@ -8,8 +8,7 @@ Este repositório reúne os projetos, desafios práticos e estudos de caso desen
 
 Os projetos aqui refletem a evolução nos estudos de Java e ecossistema de desenvolvimento:
 * **Lógica e POO**: Fundamentos de Java e Programação Orientada a Objetos.
-* **Java e SQL**: Integração de aplicações com bancos de dados relacionais.
-* **Frameworks**: Desenvolvimento de APIs e sistemas escaláveis utilizando Spring Boot (em andamento).
+* **Frameworks**: Desenvolvimento de APIs e sistemas escaláveis utilizando Spring Boot.
 * **Boas Práticas**: Aplicação de Clean Code e organização de diretórios profissional.
 
 ---
@@ -23,7 +22,6 @@ Cada subpasta dentro deste diretório representa um curso ou desafio específico
 ## 🛠️ Tecnologias
 
 * **Linguagem**: Java.
-* **Banco de Dados**: SQL Server / MySQL.
 * **Ferramentas**: IntelliJ IDEA / VS Code e Maven.
 
 ---
