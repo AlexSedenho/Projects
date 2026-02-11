@@ -14,6 +14,6 @@ Este repositório contém scripts e projetos e atividades desenvolvidas durante 
 ---
 
 ## 👨‍💻 Sobre Mim
-* Estudante de ADS focado em Backend (Java/SQL) e em constante evolução através da **Alura**. 
+* Estudante de ADS focado em Backend (Java) e em constante evolução através da **Alura**. 
 * **LinkedIn:** [linkedin.com/in/alexandre-sedenho](https://linkedin.com/in/alexandre-sedenho) 
 * **Objetivo:** Primeira oportunidade como Estagiário ou Desenvolvedor Júnior.
