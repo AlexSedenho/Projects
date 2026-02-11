@@ -1,4 +1,4 @@
-# Enterprise Management System (UrbanSuit Manager)
+# Sistema de Gestão Empresarial
 
 Um banco de dados relacional robusto desenvolvido para gerenciar recursos, funcionários e projetos de uma organização. Este projeto foi criado como um desafio de design de banco de dados, com foco total na integridade dos dados e em uma arquitetura escalável para sistemas de gestão.
 
