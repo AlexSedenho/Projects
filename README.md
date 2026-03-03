@@ -1,6 +1,6 @@
-# Projetos Acadêmicos - IFSP Barretos e Alura
+# Projetos Acadêmicos - IFSP Barretos
 
-Este repositório contém scripts e projetos e atividades desenvolvidas durante o curso de **Análise e Desenvolvimento de Sistemas** no **IFSP Câmpus Barretos** e a carreira **Desenvolvimento Backend Java** na **Alura**.
+Este repositório contém scripts e projetos e atividades desenvolvidas durante o curso de **Análise e Desenvolvimento de Sistemas** no **IFSP Câmpus Barretos**.
 
 ---
 
@@ -11,12 +11,10 @@ Este repositório contém scripts e projetos e atividades desenvolvidas durante 
   <code><img src="https://skillicons.dev/icons?i=html" /></code>
   <code><img src="https://skillicons.dev/icons?i=css" /></code>
   <code><img src="https://skillicons.dev/icons?i=javascript" /></code>
-  <code><img src="https://skillicons.dev/icons?i=java" /></code>
 </div>
 
 ---
 
 ## 👨‍💻 Sobre Mim
-* Estudante de ADS focado em Backend (Java) e em constante evolução através da **Alura**. 
 * **LinkedIn:** [linkedin.com/in/alexandre-sedenho](https://linkedin.com/in/alexandre-sedenho) 
 * **Objetivo:** Primeira oportunidade como Estagiário ou Desenvolvedor Júnior.
