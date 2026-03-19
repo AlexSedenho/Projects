@@ -29,7 +29,7 @@ Linguagem Utilizada: <div> <code><img src="https://skillicons.dev/icons?i=html" 
 ---
 
 ## Aula 4 (17/03/2026)
-Linguagem Utilizada: <div> <code><img src="https://skillicons.dev/icons?i=html" /></code> </div> <div> <code><img src="https://skillicons.dev/icons?i=css" /></code> </div>
+Linguagens Utilizadas: <div> <code><img src="https://skillicons.dev/icons?i=html" /></code> <code><img src="https://skillicons.dev/icons?i=css" /></code> </div>
 
 [Repositório Aula 4](https://github.com/AlexSedenho/web_aula4).
 
