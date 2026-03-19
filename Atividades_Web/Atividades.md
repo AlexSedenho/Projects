@@ -25,3 +25,11 @@ Linguagem Utilizada: <div> <code><img src="https://skillicons.dev/icons?i=html" 
 Linguagem Utilizada: <div> <code><img src="https://skillicons.dev/icons?i=html" /></code> </div>
 
 [Repositório Aula 3](https://github.com/AlexSedenho/web-aula3).
+
+---
+
+## Aula 4 (17/03/2026)
+Linguagem Utilizada: <div> <code><img src="https://skillicons.dev/icons?i=html" /></code> </div> <div> <code><img src="https://skillicons.dev/icons?i=css" /></code> </div>
+
+[Repositório Aula 4](https://github.com/AlexSedenho/web_aula4).
+
